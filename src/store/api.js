@@ -1,19 +1,11 @@
-import {createApi} from '@reduxjs/toolkit/query/react'
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react' // warning: webstorm неправильно автомат ставит путь, она забывает добавить в конец /react - будь аккуратнее!
 
-const url = 'http://localhost:4200/'
 export const api = createApi({
   reducerPath: 'api',
-  endpoints: builder => ({
-    getTransactions: builder.query({
-      queryFn: async () => {
-        try {
-          const response = await fetch(url + 'transactions')
-          return { data: await response.json() }
-        } catch (e) {
-          // todo: исправить обработку ошибок (крашится все приложение если есть ошибка) - причина не ясна - 28.04.2023
-          return { error: e.message }
-        }
-      }
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4200/' }),
+  endpoints: build => ({
+    getTransactions: build.query({
+      query: () => 'transactions'
     })
   })
 })

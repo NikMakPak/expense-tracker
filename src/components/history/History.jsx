@@ -11,7 +11,7 @@ const History = ({ cardID }) => {
       </div>
       {isLoading ? (
         'Loading...' // todo: сделать лоадер react skeleton
-      ) : error ? ( // todo: не отрабатывает ошибка - см. api.js
+      ) : error ? (
         <h5>{error.status} - ваш запрос не обработан :(</h5>
       ) : (
         <ul>
