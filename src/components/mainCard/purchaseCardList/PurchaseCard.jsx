@@ -1,5 +1,5 @@
 const PurchaseCard = ({ cardID }) => {
-  return <div>{cardID}</div>
+  return <li>{cardID}</li>
 }
 
 export default PurchaseCard
