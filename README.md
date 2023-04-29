@@ -6,8 +6,11 @@
 First, run the development server:
 
 ```bash
+npm install
 npm run "dev and server"
-# or
+```
+```bash
+yarn install
 yarn run "dev and server"
 ```
 
