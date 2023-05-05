@@ -3,18 +3,23 @@
     {
       "id": 1,
       "amount": "300",
-      "currency": "$",
       "category": "food",
-      "spendType": "+",
-      "cardID": "1234"
+      "spendType": "plus",
+      "cardID": "1234",
+      "date":"01.01.2011",
+      "time": "18:00:00"
     },
     {
       "id": 2,
       "amount": "500",
-      "currency": "$",
       "category": "food",
-      "spendType": "+",
-      "cardID": "1234"
+      "spendType": "minus",
+      "cardID": "1234",
+      "date":"01.03.2012",
+      "time": "17:00:00"
     }
-  ]
+  ],
+  "currencySymbol":{
+    "symbol": "$"
+  }
 }

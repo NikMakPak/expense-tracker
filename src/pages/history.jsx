@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const History = () => {
+const HistoryPage = () => {
   return (
     <>
       <Link href={'/'}>Home</Link>
@@ -10,4 +10,4 @@ const History = () => {
   )
 }
 
-export default History
+export default HistoryPage

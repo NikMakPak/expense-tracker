@@ -1,6 +1,5 @@
-const CURRENCY_SYMBOL = '$'
-const GetFormattedMoney = money => {
-  return `${CURRENCY_SYMBOL} ${money}`
+const GetFormattedMoney = (currencySymbol, money) => {
+  return `${currencySymbol} ${money}`
 }
 
 export default GetFormattedMoney
